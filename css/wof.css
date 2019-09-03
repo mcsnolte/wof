@@ -1,0 +1,116 @@
+html, body {
+    height: 100%;
+    font-family: Arial;
+    background: #000 url(../images/background.jpg) fixed center no-repeat;
+}
+
+a {
+    color: #999;
+}
+a:hover {
+    color: #090;
+}
+
+/* Container for tiles */
+#board {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 585px;
+    height: 260px;
+    margin-left: -258px;
+    margin-top: -123px;
+}
+
+/* Disable styles on tile links */
+#board a, #board a:visited {
+    text-decoration: none;
+    color: #222;
+    text-shadow:0 0 2px #000000;
+}
+
+/* Dimensions for tile, should fit the board just right! */
+.tile {
+    font-size: 38px;
+    font-weight: bold;
+    width: 46px;
+    height: 59px;
+    line-height: 58px;
+    margin: 3px 6px 4px 1px;
+    text-align: center;
+    border: 0;
+    float: left;
+}
+
+/* Background for letters */
+.white {
+    background-image: url(../images/white-tile.png);
+    background-repeat: no-repeat;
+}
+
+/* Link for playing buzzer on wrong answer */
+a#buzzer {
+    float: left;
+    color: #333;
+    font-weight: bold;
+}
+
+a#buzzer:hover {
+    color: #900;
+}
+
+/* Game controls */
+#controls_wrapper {
+    height: 20px;
+    color: #999;
+}
+
+#controls_wrapper div {
+    padding: 3px;
+    background-color: #000;
+}
+
+#controls_wrapper #controls_autohide {
+    float: right;
+    padding: 0;
+}
+
+/* Editor for entering puzzles */
+#editor_wrapper {
+    display: none;
+    background-color: #eee;
+    border: 1px solid #333;
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+    -moz-box-shadow: 2px 2px 10px #333;
+    -webkit-box-shadow: 2px 2px 10px #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+#editor_wrapper input {
+    width: 230px;
+}
+
+/* SM2 debug container */
+#soundmanager-debug {
+    position: fixed;
+    _position: absolute;
+    right: 1em;
+    bottom: 1em;
+    width: 50em;
+    height: 18em;
+    overflow: auto;
+    background: #fff;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #999;
+    font-family: monaco, "lucida console", verdana, tahoma, "sans serif";
+    font-size: x-small;
+    line-height: 1.5em;
+    opacity: 0.9;
+    filter: alpha( opacity = 90);
+}

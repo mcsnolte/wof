@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>WOF</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link type="text/css" href="css/reset.css" rel="stylesheet" />
+        <link type="text/css" href="css/wof.css" rel="stylesheet" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="js/sm/script/soundmanager2.js">
+        </script>
+        <script type="text/javascript" src="js/htmlEncode.js">
+        </script>
+        <script type="text/javascript" src="js/jookie.js">
+        </script>
+        <script type="text/javascript" src="js/wof.js">
+        </script>
+        </head>
+        <body>
+            <div id="controls_wrapper">
+                <div>
+                    <a href="javascript:void(0)" id="prev_puzzle" title="Previous puzzle">prev</a>
+                    <span id="current_puzzle">0</span>
+                    of <span id="total_puzzles">0</span>
+                    <a href="javascript:void(0)" id="next_puzzle" title="Next puzzle with start music">next</a>
+                    <em><a href="javascript:void(0)" id="next_puzzle_quietly" title="Next puzzle without start music">quietly</a></em>
+                    | <a href="javascript:void(0)" id="solve_puzzle" title="Reveal all the letters with end music">solve</a>
+                    <a href="javascript:void(0)" id="reset_puzzle" title="Hide all revealed letters">reset</a>
+                    <a href="javascript:void(0)" id="clear_board" title="Clear all white tiles">clear</a>
+                    <a href="javascript:void(0)" id="edit_puzzles" title="Edit the puzzles">edit</a>
+                    | <a href="javascript:void(0)" class="sfx" id="wofstart" title="Play puzzle starting music">start</a>
+                    <a href="javascript:void(0)" class="sfx" id="wofend" title="Play puzzle solved music">end</a>
+                    <a href="javascript:void(0)" class="sfx" id="wofbuzz" title="Play wrong answer sound">buzzer</a>
+                    <div id="controls_autohide">
+                        <a href="javascript:void(0)" id="autohide" title="Toggle auto-hiding of controls">auto-hide: off</a>
+                    </div>
+                </div>
+            </div>
+            <div id="editor_wrapper">
+                <p><strong>edit puzzle text</strong></p>
+                <div id="editors">
+                    <!-- text inputs go here -->
+                </div>
+                <a href="javascript:void(0)" id="add_puzzle" title="Add another puzzle to the queue">add</a>
+                <a href="javascript:void(0)" id="done_editing" title="Puzzles are saved in a cookie and will be restored when you return">done</a>
+            </div>
+            <div id="board">
+            </div>
+        </body>
+    </html>
